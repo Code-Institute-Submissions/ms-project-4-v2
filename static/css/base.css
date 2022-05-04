@@ -12,17 +12,29 @@ body {
     background-size: cover;
     color: whitesmoke;
     font-family: Roboto;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 122px);
 }
 
 /* -------------------------------- Header */
 
 .logo-font {
-    color: orangered;
+    color: orangered !important;
     font-family: 'Cookie', cursive;
     font-size: 400%;
 }
 
-.header-container{
-    padding-top: 100px;
+.header-container {
+    padding-top: 122px;
+}
+
+.bg-black{
+    background-color: rgba(24, 22, 22, 0.726);
+}
+
+.text-orangered {
+    color: orangered !important;
+}
+
+.text-whitesmoke {
+    color: whitesmoke !important;
 }
