@@ -24,6 +24,16 @@
     <title>The School Lunch Co {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
+    <header class="container-fluid fixed-top">
+        <div class="row">
+            <div class="col-12">
+                <a href="{% url 'home' %}" class="nav-link">
+                    <h2 class="logo-font">The School Lunch Co</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+
     {% block content %}
     {% endblock %}
 </body>
