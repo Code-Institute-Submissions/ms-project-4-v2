@@ -14,3 +14,15 @@ body {
     font-family: Roboto;
     height: calc(100vh - 100px);
 }
+
+/* -------------------------------- Header */
+
+.logo-font {
+    color: orangered;
+    font-family: 'Cookie', cursive;
+    font-size: 400%;
+}
+
+.header-container{
+    padding-top: 100px;
+}
