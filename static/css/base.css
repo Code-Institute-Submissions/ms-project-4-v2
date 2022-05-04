@@ -1,0 +1,16 @@
+/* -------------------------- Global style */
+
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: whitesmoke;
+    font-family: Roboto;
+    height: calc(100vh - 100px);
+}
