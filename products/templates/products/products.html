@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="text-orangered">All Products</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for product in products %}
+                <div class="col-sm-6 col-md-4">
+                    <div class="card bg-black bg-dark border-white">
+                        <a href="">
+                            <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p><span> Description: </span>{{ product.description }}</p>
+                            <p class="text-orangered"><span> Price €</span>{{ product.price }}</p>
+                        </div>
+                    </div>
+                </div>
+           {% endfor%}
+        </div>
+    </div>
+{% endblock %}
