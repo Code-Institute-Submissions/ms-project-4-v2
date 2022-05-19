@@ -14,13 +14,13 @@
     <div class="container header-container">
         <div class="row">
             <div class="col text-center">
-                <h2 class="text-orangered">All Products</h2>
+                <h2 class="text-orangered my-3">All Products</h2>
             </div>
         </div>
         <div class="row">
             {% for product in products %}
-                <div class="col-sm-6 col-md-4">
-                    <div class="card bg-black bg-dark border-white">
+                <div class="col-sm-6 col-md-4 my-3">
+                    <div class="card bg-dark border-white">
                         {% if product.image %}
                             <a href="">
                                 <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -32,8 +32,7 @@
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
-                            <p><span> Description: </span>{{ product.description }}</p>
-                            <p class="text-orangered"><span> Price €</span>{{ product.price }}</p>
+                            <p><span>€</span>{{ product.price }}</p>
                         </div>
                     </div>
                 </div>
