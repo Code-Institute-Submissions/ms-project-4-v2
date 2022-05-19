@@ -37,7 +37,7 @@
         </li>
         <!-- wallet -->
         <li class="nav-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link text-whitesmoke" href="">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link text-whitesmoke" href="{% url 'view_bag' %}">
                 <span><i class="fas fa-wallet"></i></span>
                 <!-- Code Institute Boutique Ado project-->
                 {% if grand_total %}
