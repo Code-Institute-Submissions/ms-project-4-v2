@@ -12,9 +12,23 @@
 {% block content %}
 <div class="container header-container">
     <div class="row">
-        <div class="col-7 my-auto">
-            <h2>Shopping Bag</h2>
+        <div class="col-7 text-center my-auto">
+            <h2 class="text-orangered my-3">Shopping Bag</h2>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-7">
+            {% if bag_items %}
+                {{ bag_items }}
+            {% else %}
+                <p>Your bag is empty</p>
+                <a href="{% url 'products' %}" class="btn btn-light">
+                    <span>Back to Products</span>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+
 </div>
 {% endblock %}
