@@ -1,0 +1,167 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "name": "Ham & Cheese Baguette",
+            "description": "Baguette Roll, Butter, Ham, Cheese",
+            "price": 1.60,
+            "category": 2,
+            "image": "baguette.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Chicken Wrap",
+            "description": "Wrap, Chicken, Lettuce, Tomatoes",
+            "price": 1.60,
+            "category": 2,
+            "image": ""
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "Ham & Cheese Sandwich",
+            "description": "Bread, Ham, Cheese, Tomatoes",
+            "price": 1.60,
+            "category": 2,
+            "image": "sandwich.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "Orange",
+            "description": "Fresh Orange (washed)",
+            "price": 0.40,
+            "category": 1,
+            "image": "orange.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "Banana",
+            "description": "Fresh Banana",
+            "price": 0.40,
+            "category": 1,
+            "image": "banana.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "Apple",
+            "description": "Fresh Apple (washed)",
+            "price": 0.40,
+            "category": 1,
+            "image": "apple.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "Pretzels",
+            "description": "50g bag",
+            "price": 0.50,
+            "category": 1,
+            "image": ""
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "name": "Popcorn",
+            "description": "50g bag",
+            "price": 0.50,
+            "category": 1,
+            "image": "popcorn.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "name": "Pancake",
+            "description": "individually wrapped",
+            "price": 0.50,
+            "category": 1,
+            "image": ""
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "name": "Chicken & Sweetcorn Pasta",
+            "description": "Pasta, Chicken, Red Pepper, Sweetcorn",
+            "price": 1.80,
+            "category": 3,
+            "image": ""
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "name": "Pasta Salad",
+            "description": "Pasta, Lettuce, Tomatoes",
+            "price": 1.80,
+            "category": 3,
+            "image": "salad.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "name": "Chicken Pasta",
+            "description": "Chicken, Pasta, Sweetcorn",
+            "price": 1.80,
+            "category": 3,
+            "image": ""
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "name": "Still Water",
+            "description": "250 ml bottle",
+            "price": 0.60,
+            "category": 4,
+            "image": "water.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Apple Juice",
+            "description": "250 ml carton with paper straw",
+            "price": 0.60,
+            "category": 4,
+            "image": ""
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Orange Juice",
+            "description": "250 ml carton with paper straw",
+            "price": 0.60,
+            "category": 4,
+            "image": ""
+        }
+    }
+]
