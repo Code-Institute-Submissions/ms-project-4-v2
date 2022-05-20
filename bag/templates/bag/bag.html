@@ -21,12 +21,12 @@
         <div class="col-12 col-md-6">
             {% if bag_items %}
             <div class="table-responsive">
-                <table class="table table-borderless text-white text-right">
+                <table class="table table-borderless text-white">
                     <thead>
                         <tr>
                           <th scope="col">Product Description</th>
                           <th scope="col">Qty</th>
-                          <th scope="col">Price</th>
+                          <th scope="col" class="text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,16 +34,26 @@
                             <tr>
                                 <td>{{ item.product.name }}</td>
                                 <td>{{ item.quantity }}</td>
-                                <td>€{{ item.product.price }}</td>
+                                <td class="text-right">€{{ item.product.price }}</td>
                             </tr>
                         {% endfor %}
                         <tr>
-                            <td colspan="3"><h6 class="text-right"><strong>Total: €{{ total|floatformat:2 }}</strong></h6></td>
+                            <td colspan="3">
+                                <h6 class="text-right"><strong>Total: €{{ total|floatformat:2 }}</strong></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center">
+                                <a href="{% url 'products' %}" class="btn btn-light">
+                                    <span>Back to Products</span>
+                                </a>
+                                <a href="{% url 'products' %}" class="btn btn-light">
+                                    <span>Go to Checkout</span>
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
-
                 </table>
-
             </div>
             {% else %}
                 <p>Your bag is empty</p>
