@@ -12,31 +12,38 @@
 {% block content %}
 <div class="container header-container">
     <div class="row">
-        <div class="col-7 text-center my-auto">
+        <div class="col-12 col-md-6 text-center my-auto">
             <h2 class="text-orangered my-3">Shopping Bag</h2>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-7">
+        <div class="col-12 col-md-6">
             {% if bag_items %}
             <div class="table-responsive">
-                <table class="table table-sm text-white">
+                <table class="table table-borderless text-white text-right">
                     <thead>
                         <tr>
                           <th scope="col">Product Description</th>
+                          <th scope="col">Qty</th>
                           <th scope="col">Price</th>
-                          <th scope="col">Quantity</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {% for item in bag_items %}
+                            <tr>
+                                <td>{{ item.product.name }}</td>
+                                <td>{{ item.quantity }}</td>
+                                <td>€{{ item.product.price }}</td>
+                            </tr>
+                        {% endfor %}
                         <tr>
-                          <th></th>
-                          <td></td>
-                          <td></td>
+                            <td colspan="3"><h6 class="text-right"><strong>Total: €{{ total|floatformat:2 }}</strong></h6></td>
                         </tr>
                     </tbody>
+
                 </table>
+
             </div>
             {% else %}
                 <p>Your bag is empty</p>
