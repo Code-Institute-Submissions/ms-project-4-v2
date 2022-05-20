@@ -40,8 +40,8 @@
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link text-whitesmoke" href="{% url 'view_bag' %}">
                 <span><i class="fas fa-wallet"></i></span>
                 <!-- Code Institute Boutique Ado project-->
-                {% if grand_total %}
-                    €{{ grand_total|floatformat:2 }}
+                {% if total %}
+                    €{{ total|floatformat:2 }}
                 {% else %}
                     €0.00
                 {% endif %}
