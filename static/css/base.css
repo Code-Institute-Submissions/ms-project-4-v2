@@ -38,3 +38,12 @@ body {
 .text-whitesmoke {
     color: whitesmoke !important;
 }
+
+
+/* ----------------------------------- Bag */
+/* ---- links to update qty/remove product */
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
