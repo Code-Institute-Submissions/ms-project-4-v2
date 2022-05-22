@@ -10,7 +10,11 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """ Add product to the shopping bag"""
+    """
+    Function to add product to the shopping bag.
+    Creates session variable which contains all the items the user
+    adds to bag.
+    """
 
     quantity = int(request.POST.get('quantity'))
     # where to redirect the user once an item is added to bag
