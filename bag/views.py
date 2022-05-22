@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
@@ -45,3 +45,14 @@ def update_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ Remove specified product from the shopping bag. """
+
+    bag = request.session.get('bag', {})
+
+    bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return HttpResponse(status=200)
