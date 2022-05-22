@@ -34,20 +34,22 @@
                             <tr>
                                 <td>{{ item.product.name }}</td>
                                 <td>
-                                    <form class="form" action="" method="POST">
+                                    <form class="form update-form" action="{% url 'update_bag' item.item_id %}" method="POST">
                                         {% csrf_token %}
                                             <div class="form-row">
                                                 <div class="col-12">
                                                     <div class="form-group">
                                                             <input class="form-control qty_input" type="number"
-                                                                name="quantity" value="{{ item.quantity }}" min="1" max="2"
+                                                                name="quantity" value="{{ item.quantity }}" min="0" max="9"
                                                                 data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                                     </div>
                                                 </div>
                                             </div>                                 
                                         </form>
-                                        <a class="update-link "><small>Update</small></a>
-                                        <a class="remove-item text-orangered float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                        <a class="update-link"><small>Update</small></a>
+                                        <a class="remove-item text-orangered float-right" id="remove_{{ item.item_id }}">
+                                            <small>Remove</small>
+                                        </a>
                                 </td>
                                 <td class="text-right">€{{ item.product.price }}</td>
                             </tr>
@@ -80,4 +82,19 @@
     </div>
 
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+
+
+<script type="text/javascript">
+// Code Institute Boutique Ado project
+
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+</script>
 {% endblock %}
