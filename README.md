@@ -1,108 +1,214 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[Link to the live project](https://ip-school-lunch-co-v-2.herokuapp.com/)
 
-Welcome ip69719,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# The School Lunch Co - Forth Milestone Project
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This project was created for an imaginary business providing lunch delivery service to local schools.
 
-## Gitpod Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Project Goals
 
-`python3 -m http.server`
+The primary Project Goal is to create a marketing website for 'The School Lunch Co'.
 
-A blue button should appear to click: _Make Public_,
+The target audience are parents of school-aged children who are looking for school lunch delivery service.
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Registration and User Accounts
 
-A blue button should appear to click: _Make Public_,
+* As a Site User I want to be able to
+    * easily register for an account so that I can view my profile.
+    * receive an email confirmation to verify that the account registration was successful.
+    * easily reset my password in case I forget it so that I can recover access to my account.
+    * use my username and password to login into the application.
+    * logout of my account.
 
-Another blue button should appear to click: _Open Browser_.
+#### Viewing and Navigation
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* As a Customer I want to be able to
+    * view a list of available products.
+    * view individual product details, e.g. the product image, price and description.
+    * view the total cost of the items selected for purchase.
 
-To log into the Heroku toolbelt CLI:
+#### Product Sorting
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* As a Customer I want to be able to
+    * sort a specific category of product so that I can find products in a specific category.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Purchasing and Checkout
 
-------
+* As a Customer I want to be able to
+    * view items in my bag so that I can see what items I have selected and what is the total cost of products to be purchased.
+    * update or remove products so that I can make changes to items in the bag before checkout.
+    * easily enter my payment information.
+    * view a confirmation of order after checkout.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Design choices
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* I used [Bootstrap](https://getbootstrap.com/) CSS framework because it allows to design websites quickly and effectively.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Cookie font from [Google fonts](https://fonts.google.com/) was chosen for the logo. Cookie is a script typeface based on brush calligraphy. It is sweet and friendly - but not too decorative.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Wireframes
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Wireframes are available [here ](https://github.com/ip69719/ms-project-4-v2/tree/main/documents/wire_frames)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* All pages have Navigation Bar which was created using [Bootstrap](https://getbootstrap.com/) navbar component. 
+* The Mobile Collapse Button will appear on smaller screens. The navigation bar will show as a dropdown when the button is clicked.
+* Home page contains a short message briefly describing the service provided by the organisation.
+* Users have the ability to register for an account, log in and out.
+* Customers can view all the available products by clicking on the "All Products" dropdown option from the "Menu Options" navbar link on the main menu.
+* Customers can view products in a specific category by selecting product category from the "Menu Options" dropdown on the main navbar.
+* By clicking on the product image the Customer is redirected to the product detail page where the information about the product including the price is displayed.
+* Users can easily add products to the shopping bag. The content of the shopping bag can be viewed at any point.
+* Users can edit the quantity of products in the bag and also have the ability to remove selected products from the bag.
+* The checkout page displays the summary of the order and invites the Customer to complete the purchase by filling out the order form and inputting card details.
+* The Customer is presented with a confirmation message if the order was successfully processed.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Features Left to Implement
+* User's profile page for registered users that would store customer details and keep a history of customer orders.
+* Admin and Store management system that would allow to add, edit or delete products.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Languages used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) used to create the structure of the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) used to style the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) used for add interactive behavior.
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) used to created logic of the website.
+* [Django Template Language](https://docs.djangoproject.com/en/4.0/ref/templates/language/) used for template inheritance, loops and if statements in the html files.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Frameworks, Libraries & Programs Used
 
-------
+* [Django](https://www.djangoproject.com/) web framework was used to create the application.
+* [Bootstrap](https://getbootstrap.com/) used to style the website.
+* [Amazon Web Services s3](https://aws.amazon.com/) used to store our static files and images.
+* [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub](https://github.com/) is used to store the projects code after being pushed from Git.
+* [Balsamiq Wireframes](https://balsamiq.com/) was used to create wireframes for the project.
+* [Google fonts](https://fonts.google.com/) were used to import the 'Cookie cursive' and 'Roboto' fonts into the style.css file.
+* [Font Awesome](https://fontawesome.com/) was used to obtain the icons.
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Code Validation
 
-**How will this affect me?**
+* The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    * W3C Markup Validator - [Results](https://github.com/ip69719/ms-project-4-v2/tree/main/documents/testing/w3c_markup_validator)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    * W3C CSS Validator - [Results](https://github.com/ip69719/ms-project-4-v2/tree/main/documents/testing/w3c_css_validation)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### User Story testing
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* **As a User I want to be able to easily register for an account so that I can view my profile.**
+    * New User can register by clicking on the "sign up" link on the login page. Alternatively, the User can click on the Register dropdown option from Account navbar link on the main menu [test_01](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_01.pdf).
 
-**Can I opt out?**
+* **As a User I want to be able to receive an email confirmation to verify that the account registration was successful.**
+    * New user is required to confirm their e-mail address before an account is created [test_02](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_02.pdf).
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* **As a User I want to be able to easily reset my password in case I forget it so that I can recover access to my account.**
+    * User can reset password by clicking on the "Forgot Password?" link on the login page [test_03](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_03.pdf).
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* **As a User I want to be able to use my username and password to login into the application.**
+    * By clicking on the login navbar link the user is presented with a log in form where the user can enter their username and password.
+    * Confirmed that existing User can log in to application by clicking on the Sign In button after inputting credentials into username and password fields.
 
-**Anything more?**
+* **As a User I want to be able to logout of my account.**
+    * User can log out of the application by clicking on the Logout navbar link on the main menu [test_04](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_04.pdf).
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* **As a Customer I want to be able to view a list of available products.**
+    * Customers have the ability to view all the available products by clicking on the "All Products" dropdown option from the "Menu Options" navbar link on the main menu. Product image and brief description is displayed for every product [test_05](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_05.pdf).
 
----
+* **As a Customer I want to be able to view individual product details, e.g. the product image, price and description.**
+    * By clicking on the product image the Customer is redirected to the product detail page where the information about the product and price can be found. [test_06](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_06.pdf).
 
-Happy coding!
+* **As a Customer I want to be able to view the total cost of the items selected for purchase.**
+    * The total costs are recalculated after each product is added to shopping bag and the amount is displayed in the top right corner of the main navbar. [test_07](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_07.pdf).
+
+* **As a Customer I want to be able to sort a specific category of product so that I can find products in a specific category.**
+    * Customers have the ability to view products in a specific category by selecting product category from the "Menu Options" dropdown on the main navbar. [test_08](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_08.pdf).
+
+* **As a Customer I want to be able to view items in my bag so that I can see what items I have selected and what is the total cost of products to be purchased.**
+    * Customers can view the content of the shopping bag at any point by clicking on the icon in the top right corner of the main navbar. The shopping bag page contains the list of products selected, quantity of each item to be purchased and displays the total cost of the order. [test_09](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_09.pdf).
+
+* **As a Customer I want to be able to update or remove products so that I can make changes to items in the bag before checkout.**
+    * The Customer has the ability to adjust items in the shopping bag by updating product quantity and clicking on the 'update' link. Alternatively, the Customer can remove products from the bag by clicking on 'remove' link. The total cost of the order is recalculated on adjustments. [test_09](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_09.pdf).
+
+* **As a Customer I want to be able to easily enter my payment information.**
+    * The Customer is redirected from the shopping bag to the checkout page when the 'Go to Checkout' button is clicked. Here the Customer is invited to fill out the order form. The Customer can enter card details in the payment section of the form and submit the order [test_10](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_10.pdf).
+
+* **As a Customer I want to view a confirmation of order after checkout.**
+    * The Customer is presented with a confirmation message when the order was successfully processed [test_11](https://github.com/ip69719/ms-project-4-v2/blob/main/documents/testing/test_evidence/test_11.pdf).
+
+
+* Known Bugs
+
+    * The site is not fully responsive on smaller screens.
+
+
+## Deployment
+
+### Heroku
+
+The project was deployed to Heroku using the following steps:
+
+1. Log in to Heroku
+1. Click New in the top right corner and select "Create a New App"
+1. Give the app a name and select the closest region, then click 'Create App'
+1. Click on Resource tab Add-On Heroku Progres database
+1. Select a Development plan
+1. Configure variables for:
+    * AWS_ACCESS_KEY_ID   
+    * AWS_SECRET_ACCESS_KEY
+    * DATABASE_URL
+    * EMAIL_HOST_PASS
+    * EMAIL_HOST_USER
+    * SECRET_KEY
+    * STRIPE_PUBLIC_KEY
+    * STRIPE_SECRET_KEY
+    * STRIPE_WH_SECRET
+    * USE_AWS
+1. Note that the automatic deployment from GitHub repository is currently unavailable.
+1. From the Gitpod terminal run heroku login -i command and login to Heroku
+1. Initialise Heroku app: heroku git:remote -a (followed by Heroku app name)
+1. Run git push heroku main command.
+1. Click "Open app" to launch the app from the Heroku website once the deplayment has completed or use the link provided in the terminal.
+
+
+### Amazon Web Services S3 
+
+1. Go to [Amazon Web Services](https://aws.amazon.com/) and create a free accout.
+1. Create S3 Bucket, enable static website hosting add permissions (Cross-origin resource sharing (CORS)), add Bucket policy and update Access control list (ACL)
+1. Navigate to Identity and Access Management (IAM) and create user group.
+1. Create an access policy giving the group access to the S3 bucket.
+1. Assign the user to the group.
+
+
+## Credits
+
+### Content
+
+* Content of READ.md was written with reference to [Example README.md template](https://github.com/Code-Institute-Solutions/SampleREADME).
+
+### Media
+
+* Images were sourced from [Shutterstock](https://www.shutterstock.com/home) and [Dreamstime](https://www.dreamstime.com/)
+
+### Code
+
+* Used Code Institute Boutique Ado Project tutorial as a reference to implement project idea.
+
+### Acknowledgements
+
+* Special thanks to Code Institute for exellent leaning materials.
